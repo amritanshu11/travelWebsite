@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  .taj{
+    width: 333px;
+    height: 500px;
+    border-radius: 3px;
+  }
+  .top{
+  display: flex;
+  justify-content: space-around;
+  margin: 40px;
+  }
+  .top_right{
+    overflow: hidden;
+  }
+  .top_item h2{
+    position: relative;
+    left: 130px;
+    color: #393E46;
+    text-align: center;
+  font-family: 'Baloo Tammudu 2', cursive;
+  font-size: 55px;
+  width: 400px;
+  margin-right: 95px;
+  }
+  .top_item p{
+    position: relative;
+    left: 45px;
+  width: 80%;
+    color: #393E46;
+    text-align: center;
+  font-family: 'Viaoda Libre', cursive;
+  font-size: 15px;
+  
+  }
+  /* media qurey */
+  @media screen and (max-width: 800px){
+    .top{
+  display: block;
+    }
+ 
+    .top_item h2{
+      position: relative;
+      left: 0px;
+      top: 22px;
+      text-align: center;
+    font-size: 25px;
+    width: 100%;
+    margin-right: 0px;
+    }
+    .top_item p{
+      position: relative;
+      top: 22px;
+      width: 80%;
+      color: #393E46;
+      text-align: center;
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 10px;
+    }
+  
+  }
+  .second {
+    display: flex;
+    position: relative;
+    top: 22px;
+  }
+  .second-image{
+    position: relative;
+    left: 60px;
+  margin-left: 30px;
+  width: 180px;
+  height: 240px;
+  overflow: hidden;
+  background-image: url("https://images.pexels.com/photos/2870167/pexels-photo-2870167.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size:220px 300px;
+  background-repeat: no-repeat;
+  border-radius: 3px 3px;
+  }
+  .second-image:hover{
+    transform: scale(1.1);
+  }
+  
+  .img1 {
+    background-image: url("https://images.pexels.com/photos/2349168/pexels-photo-2349168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+  .img2 {
+    background-image: url("https://images.unsplash.com/photo-1514222134-b57cbb8ce073?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+  }
+  /* media qurey */
+  @media screen and (max-width: 700px){
+    .second {
+    display: grid;
+    }
+    .second-image{
+      position: relative;
+      left: 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  
+    }
+  }
+  /* media qurey */
+  .mains{
+    width: 100%;
+  }
+  .mains h1{
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: 'Baloo Tammudu 2', cursive;
+  }
+  
+  
+  .seconds{
+  display:flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  
+  }
+  .seconds::-webkit-scrollbar{
+  width: 0px;
+  }
+  
+  
+  
+  .seconds-image{
+    min-width: 340px;
+    height: 220px;
+  margin: 30px;
+  background-image: url("https://images.pexels.com/photos/3879160/pexels-photo-3879160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  border-radius: 8px;
+  position: relative;
+  }
+  
+  .seconds-text{
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s
+  }
+  .seconds-text:hover{
+    background: #91ffdd82;
+  }
+  .seconds-text h1{
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 18px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  position:absolute;
+  opacity: 0;
+  transition: 0.5s;
+  }
+  .seconds-text:hover h1{
+    bottom: 49%;
+    opacity: 1;
+  }
+  
+  .img5{
+    background-image: url("https://images.pexels.com/photos/1583339/pexels-photo-1583339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+  .img6{
+    background-image: url("https://images.pexels.com/photos/4059538/pexels-photo-4059538.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: center;
+  }
+  .img7{
+    background-image: url("https://i.ibb.co/rmGqZqS/agara.jpg");
+  }
+  .img8{
+    background-image: url("https://i.ibb.co/B2Btj5R/jodhpur.jpg");
+  }
+  .img9{
+    background-image: url("https://i.ibb.co/NsSkZRb/Alappuzha.jpg");
+  }
+  /* not included in css */
+  .main{
+    padding-top: 80px;
+  }
+  .showcase{
+    width: 340px;
+    height: 220px;
+    border-radius: 10px;
+    margin: 0 20px 10px 20px;
+    overflow: hidden;
+  }
+  
+  .main h1{
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: 'Baloo Tammudu 2', cursive;
+  }
+  .showcase img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  .showcase h2{
+  font-size: 12px;
+  font-weight: 900;
+  text-align: center;
+  padding-right: 4px;
+  color: grey;
+  font-family: 'Viaoda Libre', cursive;
+  transition: 1s;
+  display: none;
+  }
+  
+  
+  .cs-hidden{
+    overflow: visible !important;
+  }
+  
+  
+  /* media qurey */
+  @media screen and (max-width: 700px){
+    .second .lSSlideOuter{
+      height: 270px;
+    }
+  .seconds-image{
+    max-width: 250px;
+    height: 180px;
+    margin: 10px;
+  }
+  }
+  /* media qurey */
+  .hotel h1{
+    margin: 4px 12px;
+    text-align: center;
+    margin-bottom: 15px;
+  font-family: 'Baloo Tammudu 2', cursive;
+  }
+  .hotel-list{
+    width: 250px;
+    height: 500px;
+    margin: 0 20px 10px 20px;
+  }
+  .hotel-list img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 6px 6px 0 0;
+  }
+  .hotel-name{
+        background-color: #FAF1E6;
+        border-radius: 0 0 6px 6px;
+        padding: 0 4px;
+  }
+  .hotel-name h3{
+    font-size: 15px;
+    text-align: center;
+    color: grey;
+    font-weight: 900;
+    z-index: 2;
+  }
+  .hotel-detail{
+    padding-top: 7px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom:7px;
+  
+  }
+  
+  .hotel-detail p{
+    font-size: 15px;
+  }
+  .hotel-detail a
+  {
+    font-size: 15px;
+    color: grey;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hotel-detail a:hover
+  {
+    text-decoration: none;
+    color: red;
+  }
+  .cs-hidden{
+    overflow: visible !important;
+  }
+  /* media qurey */
+  @media screen and (max-width: 700px){
+  
+  .hotel-list{
+    max-width: 300px;
+    height: 400px;
+    margin: 10px;
+  }
+  .hotel-list{
+    width: 200px;
+    height: 250px;
+    margin: 0 20px 10px 20px;
+  }
+  
+  .lSSlideOuter{
+    height: 500px;
+  }
+  }
+  /* media qurey */
+  
+  .corona-update{
+    margin:50px;
+    width: 80%;
+    height: 300px;
+    background-color:#80808036;
+      border-radius: 6px 6px;
+    margin: auto;
+      margin-bottom: 50px;
+  }
+  .corona-update ul{
+    list-style: none;
+  }
+  .corona-update ul li{
+    font-size: 34px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+  }
+  .corona-update ul li a{
+    text-decoration: none;
+    color: grey;
+    padding: 20px;
+  
+  }
+  .corona{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+  .country{
+    margin-top: 50px;
+    width: 250px;
+    height: 150px;
+    background-color: #343A40;
+    border-radius: 5px 5px;
+    position: relative;
+  }
+  .country h3 {
+  color: #fff;
+  position: absolute;
+  top: 0%;
+  left: 30%;
+  transform: translate(-35% -35%);
+  }
+  .country p {
+  color: #EDFFEC;
+  position: absolute;
+  top: 40%;
+  left: 32%;
+  transform: translate(-35% -35%);
+  font-size: 28px;
+  font-family: 'Bebas Neue', cursive;
+  }
+  .show p{
+    color: #EDFFEC;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    transform: translate(-35% -35%);
+    font-size: 18px;
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 2px;
+  }
+  /* media qurey */
+  @media screen and (max-width: 700px){
+    .corona-update{
+      height: auto;
+    }
+    .corona{
+      display: flex;
+      flex-direction: column;
+    }
+    .country{
+      margin: auto;
+      margin-bottom: 9px;
+    }
+  }
+  /* media qurey */
+  
+  .brand{
+    width: 100%;
+    height: 190px;
+    border-top: 1px solid grey;
+    display: flex;
+    flex-direction:column;
+  }
+  .brand i{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 50%;
+  margin-top: 3%;
+  margin-left: 47%;
+  }
+  .brand h1{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 900;
+  }
+  .brand p{
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+  }
+  .logo{
+  margin-left: 45%;
+  margin-bottom: 2%;
+  }
+  .logo a
+  {
+    color: black;
+    margin-right: 3px;
+  }
+  
+  @media screen and (max-width: 700px){
+    .footer{
+  position:relative;
+  
+    }
+  .brand i{
+    position: relative;
+    right: 14px;
+  }
+    .logo{
+  margin-left: 110px;
+  position: relative;
+  bottom: 18px;
+    }
+  }
+  

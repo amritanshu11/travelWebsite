@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+  }
+  nav h1{
+    color: grey;
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+  color: #bb371a;
+  font-size: 32px;
+  font-weight: 600;
+  
+  }
+  
+  .nav-link{
+    flex:1;
+    text-align: right;
+  }
+   .nav-link ul li{
+     list-style: none;
+     display: inline-block;
+     padding: 8px 12px;
+     position: relative;
+   }
+    .nav-link ul li a{
+      color: grey;
+      text-decoration: none;
+      font-size: 15px;
+    }
+  
+     .nav-link ul li::after{
+    content: "";
+       width: 0%;
+       height: 2px;
+       display: block;
+       background: grey;
+       margin: auto;
+       transition: 0.5s
+     }
+        .nav-link ul li:hover::after{
+          width: 100%;
+        }
+  
+  nav .fas{
+    display: none;
+  }
+  
+  
+  @media screen and (max-width: 700px)
+  {
+  .nav-link ul li{
+    display: block;
+  }
+  .nav-link ul li a{
+  color: black;
+  }
+  .nav-link{
+    position: absolute;
+    background: #FAF1E6;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 0.5s;
+  }
+  nav .fas{
+    display: block;
+    font-size: 22px;
+    cursor:pointer;
+  }
+  .nav-link ul{
+    padding: 30px;
+  }
+  
+  }
+  /* media qurey for navbar */
+  .top_container{
+    width: 100%;
+    height: 500px;
+    background-image: url("https://images.pexels.com/photos/917494/pexels-photo-917494.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),url("https://i.ibb.co/bdGxQsk/mask.jpg");
+    background-blend-mode: screen;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .heading{
+  position:absolute;
+  top: 39%;
+  left: 29%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    width: 40%;
+    height: 40%;
+    border-radius: 8px;
+  }
+  .heading ul{
+    list-style: none;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  transform: translate(-10% -10%);
+  }
+ 
+  .heading ul li a{
+    color: #fff;
+  text-decoration: none;
+  font-size: 32px;
+  font-family: 'Dancing Script', cursive;
+  text-decoration: none;
+  
+  }
+  .heading ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #ff96ad;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  
+  }
+  .heading ul li:hover::after{
+  width: 100%;
+  }
+  /* media qurey */
+  @media screen and (max-width: 700px){
+    .top_container{
+      width: 100%;
+      background-image: url("https://images.pexels.com/photos/917494/pexels-photo-917494.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),url("mask.jpg");
+      background-blend-mode: screen;
+      background-size: 350px 300px;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+    .heading{
+    position:absolute;
+    top: 39%;
+    left: 15%;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+      width: 70%;
+      height: 20%;
+      border-radius: 8px;
+    }
+   .heading ul li a{
+        color: #fff;
+      text-decoration: none;
+      font-size: 22px;
+      font-family: 'Dancing Script', cursive;
+      text-decoration: none;
+      }
+  }
+  
+  
+  .second{
+    width: 80%;
+    display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  }
+  .second-image{
+  width: 150px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  }
+  .second-image span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+  background-image: url("https://images.pexels.com/photos/3879160/pexels-photo-3879160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size:150px 200px;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  transition: 1s;
+  }
+  .second-image span:nth-child(1){
+    z-index: 10;
+    width: 25%;
+    transition-delay: 0s;
+  }
+  .second-image span:nth-child(2){
+    z-index: 9;
+    width: 50%;
+    transition-delay: 0.2s;
+  }
+  .second-image span:nth-child(3){
+    z-index: 8;
+    width: 75%;
+    transition-delay: 0.4s;
+  }
+  .second-image span:nth-child(4){
+    z-index: 7;
+    width: 100%;
+    transition-delay: 0.6s;
+  }
+  .second-image:hover span{
+  
+  transform: translateY(-100%);
+  transition: 1s;
+  }
+  .second-row:hover span{
+    transform:translate3d(-100%,100%,50px);
+  transition: 1s;
+  }
+  .second-image:hover span:nth-child(1){
+    transition-delay: 0.8s;
+  }
+  .second-image:hover span:nth-child(2){
+    transition-delay: 0.6s;
+  }
+  .second-image:hover span:nth-child(3){
+    transition-delay: 0.3s;
+  }
+  .second-image:hover span:nth-child(4){
+    transition-delay: 0s;
+  }
+  .second-text{
+  color: grey;
+  text-align: center;
+  padding: 80px 20px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transform: translateY(100%);
+  transition: 2s;
+  }
+  .second-text h1{
+    padding-bottom: 15px;
+  }
+  .second-text a{
+    color: grey;
+    text-decoration: none;
+    padding: 7px;
+    border: 1px solid grey;
+  }
+  .second-text a:hover{
+    color: #fff;
+    background-color: #343a40;
+  }
+  
+  .second-image:hover .second-text{
+    transform: translateY(0%);
+  }
+  .img1 span{
+    background-image: url("https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+  .img2 span
+  {
+    background-image: url("https://images.pexels.com/photos/3254754/pexels-photo-3254754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+  .img3 span{
+    background-image: url("https://images.pexels.com/photos/2868242/pexels-photo-2868242.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+  .img4 span{
+    background-image: url("https://images.pexels.com/photos/2413613/pexels-photo-2413613.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+  .img5 span{
+    background-image: url("https://images.pexels.com/photos/5619276/pexels-photo-5619276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+  .img6 span{
+    background-image: url("https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg?cs=srgb&dl=pexels-oliver-sj%C3%B6str%C3%B6m-931018.jpg&fm=jpg");
+  }
+  .img7 span{
+    background-image: url("https://images.pexels.com/photos/1006965/pexels-photo-1006965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+  .img8 span{
+    background-image: url("https://images.pexels.com/photos/1680230/pexels-photo-1680230.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+  .img9 span{
+    background-image: url("https://images.pexels.com/photos/777059/pexels-photo-777059.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+  
+  
+  .img10 span{
+    background-image: url("https://images.pexels.com/photos/3601422/pexels-photo-3601422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+  .img11 span
+  {
+    background-image: url("https://images.pexels.com/photos/373409/pexels-photo-373409.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+  .img12 span{
+    background-image: url("https://images.pexels.com/photos/1703314/pexels-photo-1703314.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+  .img13 span{
+    background-image: url("https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+  .img14 span{
+    background-image: url("https://images.pexels.com/photos/935474/toronto-beauty-clouds-skyline-935474.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+  /* media qurey */
+  @media screen and (max-width: 700px){
+    .second{
+  display:grid;
+  
+    }
+    .second-image{
+    width: 250px;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 30PX;
+    }
+    .second-image span{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+    background-size:250px 280px;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    transition: 1s;
+    }
+  }
+  
+  .brand1{
+    width: 100%;
+    height: 160px;
+    border-top: 1px solid grey;
+    display: flex;
+    flex-direction:column;
+    margin-top: 6px;
+  }
+  .brand1 i{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 50%;
+  margin-top: 3%;
+  margin-left: 47%;
+  }
+  .brand1 h1{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 900;
+  }
+  .brand1 p{
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+  }
+  .logo1{
+  margin-left: 45%;
+  margin-bottom: 2%;
+  }
+  .logo1 a
+  {
+    color: black;
+    margin-right: 5px;
+  }
+  .footer{
+    margin-top: 60px;
+  }
+  @media screen and (max-width: 700px){
+    .logo1{
+      margin-left: 110px;
+    }
+    .footer{
+  position:relative;
+    }
+    .brand1{
+      height: 140px;
+    }
+  }
+  
